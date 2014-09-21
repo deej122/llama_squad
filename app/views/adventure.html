@@ -1,3 +1,4 @@
+<!--FIRST PAGE "HEY"-->
 <div class="page page_one" ng-show="showPageOne == true" ng-init="showPageOne = true; showPageTwoPositive = false; showPageTwoNegative = false; showPageThreePositive = false; pageOneCountdown = false; showLine = 0; showLineTwo = 1; showLineTwoNeg = 1; showLineThree = 1;">
 	<div class="statement">
 		Hey,&nbsp;<input type="text" class="input" ng-model="username" placeholder="what's your name?" ng-change="pageOneCountdownSet()"/>&nbsp;!
@@ -34,6 +35,7 @@
 	</div>
 </div>
 
+<!--SECOND PAGE IF YOU SELECT "YEAH, SURE" ON PAGE ONE-->
 <div class="page page_two_positive" ng-show="showPageTwoPositive == true">
 	<div class="statement" ng-show="showLineTwo > 0">
 		Great! Thanks a "five llamas," buddy!
@@ -63,6 +65,7 @@
 	</div>
 </div>
 
+<!--SECOND PAGE IF YOU SELECT "NOPE, SORRY" ON PAGE ONE-->
 <div class="page page_two_negative" ng-show="showPageTwoNegative == true">
 	<div class="statement" ng-show="showLineTwoNeg > 0">
 		Ah, Playing hard to get, I see.
@@ -85,6 +88,7 @@
 	</div>
 </div>
 
+<!--THIRD PAGE - QUESTIONS-->
 <div class="page page_three_positive" ng-show="showPageThreePositive == true">
 	<div class="statement" ng-show="showLineThree > 0">
 		Alright here we go, let's see how much you know!
