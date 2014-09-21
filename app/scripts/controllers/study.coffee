@@ -1,6 +1,6 @@
 'use strict'
 angular.module('llamaApp')
-	.controller 'MainCtrl', ($scope) ->
+	.controller 'StudyCtrl', ($scope) ->
 		$scope.awesomeThings = []
-		console.log 'YOYO'
+		$scope.test = 'STUDYYUDTUYDU'
 		return
