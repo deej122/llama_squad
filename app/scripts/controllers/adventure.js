@@ -2,17 +2,61 @@
 (function() {
   'use strict';
   angular.module('llamaApp').controller('AdventureCtrl', function($scope, $interval) {
-    $scope.awesomeThings = [];
-    $scope.test = 'TEEEEEST';
-    console.log($scope.username);
-    console.log($scope.pageOneCountdown);
-    if ($scope.pageOneCountdown === true) {
-      console.log('TRUE');
-      $scope.pageOneLines = $interval(function() {
-        console.log('EY');
-        $scope.showLine = $scope.showLine + 1;
-      }, 3000);
-    }
+    $scope.questionOneCorrect = void 0;
+    $scope.questionTwoCorrect = void 0;
+    $scope.questionThreeCorrect = void 0;
+    $scope.questionFourCorrect = void 0;
+    $scope.pageOneCountdownSet = function() {
+      $interval(function() {
+        return $scope.showLine = $scope.showLine + 1;
+      }, 2000);
+    };
+    $scope.pageTwoCountdownSet = function() {
+      $interval(function() {
+        return $scope.showLineTwo = $scope.showLineTwo + 1;
+      }, 2000);
+    };
+    $scope.pageTwoNegCountdownSet = function() {
+      $interval(function() {
+        return $scope.showLineTwoNeg = $scope.showLineTwoNeg + 1;
+      }, 2000);
+    };
+    $scope.pageThreeCountdownSet = function() {
+      $interval(function() {
+        return $scope.showLineThree = $scope.showLineThree + 1;
+      }, 2000);
+    };
+    return $scope.checkAnswers = function() {
+      $scope.totalCorrect = 0;
+      $scope.questionOneAnswer = $scope.questionOneAnswer.toLowerCase();
+      $scope.questionTwoAnswer = $scope.questionTwoAnswer.toLowerCase();
+      $scope.questionThreeAnswer = $scope.questionThreeAnswer.toLowerCase();
+      $scope.questionFourAnswer = $scope.questionFourAnswer.toLowerCase();
+      if ($scope.questionOneAnswer === 'y' || $scope.questionOneAnswer === 'yes') {
+        $scope.questionOneCorrect = true;
+        $scope.totalCorrect = $scope.totalCorrect + 1;
+      } else {
+        $scope.questionOneCorrect = false;
+      }
+      if ($scope.questionTwoAnswer === 'y' || $scope.questionTwoAnswer === 'yes') {
+        $scope.questionTwoCorrect = true;
+        $scope.totalCorrect = $scope.totalCorrect + 1;
+      } else {
+        $scope.questionTwoCorrect = false;
+      }
+      if ($scope.questionThreeAnswer === 'y' || $scope.questionThreeAnswer === 'yes') {
+        $scope.questionThreeCorrect = true;
+        $scope.totalCorrect = $scope.totalCorrect + 1;
+      } else {
+        $scope.questionThreeCorrect = false;
+      }
+      if ($scope.questionFourAnswer === 'y' || $scope.questionFourAnswer === 'yes') {
+        $scope.questionFourCorrect = true;
+        return $scope.totalCorrect = $scope.totalCorrect + 1;
+      } else {
+        return $scope.questionFourCorrect = false;
+      }
+    };
   });
 
 }).call(this);
