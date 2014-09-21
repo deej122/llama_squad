@@ -1,7 +1,23 @@
+<div class="header">
+	<a href = "/">
+		<div id="brand">
+			LLLA
+		</div>
+	</a>
+	<a href="/studyup">
+		<div id="studyGuide">
+			STUDY GUIDE
+		</div>
+	</a>
+	<span id="restartTooltip"ng-show="showRestartText == true">RESTART STORY</span>
+	<div id="restartStory" onClick="window.location.reload()" ng-mouseover="showRestartText=true" ng-mouseleave="showRestartText=false">
+		&#8666;
+	</div>
+</div>
 <!--FIRST PAGE "HEY"-->
 <div class="page page_one" ng-show="showPageOne == true" ng-init="showPageOne = true; showPageTwoPositive = false; showPageTwoNegative = false; showPageThreePositive = false; pageOneCountdown = false; showLine = 0; showLineTwo = 1; showLineTwoNeg = 1; showLineThree = 1;">
 	<div class="statement">
-		Hey,&nbsp;<input type="text" class="input" ng-model="username" placeholder="what's your name?" ng-change="pageOneCountdownSet()"/>&nbsp;!
+		Hey,&nbsp;<input type="text" class="input" ng-model="username" placeholder="what's your name?" ng-focus="pageOneCountdownSet()"/>&nbsp;!
 	</div>
 
 	<div class="statement" ng-show="showLine > 0">
@@ -61,14 +77,14 @@
 	<div class="button_container" ng-show="showLineTwo > 7">
 		<input type="button" value="EH, WHY NOT" class="positive_button" ng-click="showPageThreePositive = true; showPageTwoPositive=false; pageThreeCountdownSet()"/>
 		<!--SHOW A LINE OF TEXT "YOU JUST NEED TO STUDY AND COME BACK. THEN YOU'LL BE ABLE TO HELP ME." -> DELAYED REDIRECT TO STUDY GUIDE PAGE-->
-		<input type="button" value="NO, ARE YOU KIDDING?" class="negative_button" ng-click="timeToStudy();"/>
+		<a href="/studyup" class="negative_button">NAH, LET ME STUDY UP</a>
 	</div>
 </div>
 
 <!--SECOND PAGE IF YOU SELECT "NOPE, SORRY" ON PAGE ONE-->
 <div class="page page_two_negative" ng-show="showPageTwoNegative == true">
 	<div class="statement" ng-show="showLineTwoNeg > 0">
-		Ah, Playing hard to get, I see.
+		Ah, playing hard to get, I see.
 	</div>
 	<div ng-show="showLineTwoNeg > 1">...</div>
 	<div class="statement" ng-show="showLineTwoNeg > 2">
@@ -84,7 +100,7 @@
 
 	<div class="button_container" ng-show="showLineTwoNeg > 6">
 		<input type="button" value="HMPH, FINE" class="positive_button" ng-click="showPageThreePositive = true; showPageTwoNegative=false; pageThreeCountdownSet()"/>
-		<input type="button" value="I'LL BE BACK, JUST YOU WAIT" class="negative_button" ng-click="timeToStudy();"/>
+		<a href="/studyup" class="negative_button">I'LL BE BACK, JUST WAIT</a>
 	</div>
 </div>
 

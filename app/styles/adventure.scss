@@ -4,8 +4,13 @@
 	margin-top: 5%;
 	width: 100%;
 	font-size: 20px;
-	font-family: 'Arial';
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: rgba(65, 64, 66, 1);
 }
 
 .input{
@@ -15,6 +20,7 @@
 	border-right: none;
 	border-bottom: 1px solid rgba(0,0,0,.4);
 	padding: 5px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .input:focus{
@@ -38,6 +44,7 @@
 	padding: 12px;
 	background-color: rgba(0, 180, 102, .2);
 	color: rgba(0, 180, 102, 1);
+	font-family: 'Montserrat', sans-serif;
 }
 
 .positive_button:hover{
@@ -53,6 +60,7 @@
 	padding: 12px;
 	background-color: rgba(205, 85, 85, .2);
 	color: rgba(205, 85, 85, 1);
+	font-family: 'Montserrat', sans-serif;
 }
 
 .negative_button:hover{

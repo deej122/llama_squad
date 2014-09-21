@@ -32,30 +32,30 @@ angular.module('llamaApp')
 
 		$scope.checkAnswers = ->
 			$scope.totalCorrect = 0
-			$scope.questionOneAnswer = $scope.questionOneAnswer.toLowerCase()
-			$scope.questionTwoAnswer = $scope.questionTwoAnswer.toLowerCase()
-			$scope.questionThreeAnswer = $scope.questionThreeAnswer.toLowerCase()
-			$scope.questionFourAnswer = $scope.questionFourAnswer.toLowerCase()
+			$scope.questionOneAnswerCheck = $scope.questionOneAnswer.toLowerCase()
+			$scope.questionTwoAnswerCheck = $scope.questionTwoAnswer.toLowerCase()
+			$scope.questionThreeAnswerCheck = $scope.questionThreeAnswer.toLowerCase()
+			$scope.questionFourAnswerCheck = $scope.questionFourAnswer.toLowerCase()
 
-			if $scope.questionOneAnswer == 'y' || $scope.questionOneAnswer == 'yes'
+			if $scope.questionOneAnswerCheck == 'y' || $scope.questionOneAnswerCheck == 'yes'
 				$scope.questionOneCorrect = true
 				$scope.totalCorrect = $scope.totalCorrect + 1
 			else
 				$scope.questionOneCorrect = false
 			
-			if $scope.questionTwoAnswer == 'y' || $scope.questionTwoAnswer == 'yes'
+			if $scope.questionTwoAnswerCheck == 'y' || $scope.questionTwoAnswerCheck == 'yes'
 				$scope.questionTwoCorrect = true
 				$scope.totalCorrect = $scope.totalCorrect + 1
 			else
 				$scope.questionTwoCorrect = false
 
-			if $scope.questionThreeAnswer == 'y' || $scope.questionThreeAnswer == 'yes'
+			if $scope.questionThreeAnswerCheck == 'y' || $scope.questionThreeAnswerCheck == 'yes'
 				$scope.questionThreeCorrect = true
 				$scope.totalCorrect = $scope.totalCorrect + 1
 			else
 				$scope.questionThreeCorrect = false
 			
-			if $scope.questionFourAnswer == 'y' || $scope.questionFourAnswer == 'yes'
+			if $scope.questionFourAnswerCheck == 'y' || $scope.questionFourAnswerCheck == 'yes'
 				$scope.questionFourCorrect = true
 				$scope.totalCorrect = $scope.totalCorrect + 1
 			else

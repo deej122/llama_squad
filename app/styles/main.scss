@@ -1,8 +1,58 @@
-// bower:scss
-// endbower
+.header{
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding: 4px;
+}
 
-/* Space out content a bit */
+#brand{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 26px;
+    float: left;
+    width: 6%;
+    margin-left: 1%;
+}
 
+#studyGuide{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    float: left;
+    width: 6%;
+    margin-top: 0.75%;
+    margin-left: 1%;
+}
+
+#studyGuide:hover{
+    text-decoration: underline;
+    color: rgba(92, 172, 238, 1);
+}
+
+#restartStory{
+    position: absolute;
+    right: 1%;
+    font-size: 26px;
+    margin-top: 0.25%;
+}
+
+#restartStory:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(92, 172, 238, 1);
+}
+
+#restartTooltip{
+    position: absolute;
+    right: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    margin-top: 0.75%;
+    color: rgba(92, 172, 238, 1);
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 }
