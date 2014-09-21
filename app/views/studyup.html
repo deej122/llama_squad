@@ -1,1 +1,45 @@
-{{test}}
+<div class="header">
+	<a href = "/">
+		<div id="brand">
+			LLLA
+		</div>
+	</a>
+	<a href="/#/studyup">
+		<div id="studyGuide" class="current_question">
+			STUDY GUIDE
+		</div>
+	</a>
+	<a href="/#/adventure">
+		<div id="goToStory">
+			GO TO STORY
+		</div>
+	</a>
+</div>
+<div id="studyGuideContainer" ng-init="showAnswer=false">
+	<div id="guideTitle">
+		LARRY'S GUÍA DE ESTUDIO
+		<br/>
+		<span id="subtitle">
+			(AKA STUDY GUIDE)
+		</span>
+	</div>
+	<div class="question_answer" ng-repeat="question in qa" ng-click="showAnswer=!showAnswer">
+		<div class="quiz_question" ng-show="question.quiz == true">
+			QUIZ
+		</div>
+		<div class="question" ng-class="{not_quiz: question.quiz == false}">
+			<span class="question_content">
+				{{question.question}}
+			</span>
+			<span class="click_for_answer" ng-show="showAnswer==false">
+				CLICK FOR ANSWER
+			</span>
+			<span class="click_for_answer" ng-show="showAnswer==true">
+				CLICK TO HIDE ANSWER
+			</span>
+		</div>
+		<div class="guide_answer" ng-show="showAnswer == true">
+			{{question.answer}}
+		</div>
+	</div>
+</div>

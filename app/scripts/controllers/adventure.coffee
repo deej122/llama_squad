@@ -55,7 +55,7 @@ angular.module('llamaApp')
 			else
 				$scope.questionThreeCorrect = false
 			
-			if $scope.questionFourAnswerCheck == 'y' || $scope.questionFourAnswerCheck == 'yes'
+			if $scope.questionFourAnswerCheck == 'n' || $scope.questionFourAnswerCheck == 'no'
 				$scope.questionFourCorrect = true
 				$scope.totalCorrect = $scope.totalCorrect + 1
 			else

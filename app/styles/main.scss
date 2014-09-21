@@ -1,3 +1,41 @@
+/*TITLE PAGE STYLING*/
+#mainSection{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.title{
+    width: 100%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.links_container{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+
+.link{
+    float: left;
+    width: 49%;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(92, 172, 238, 1);
+}
+
+/*HEADER STYLING*/
 .header{
     float: left;
     position: absolute;
@@ -52,6 +90,29 @@
     line-height: 26px;
     margin-top: 0.75%;
     color: rgba(92, 172, 238, 1);
+}
+
+#goToStory{
+    position: absolute;
+    right: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+    margin-top: 0.75%;
+}
+
+#goToStory:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(92, 172, 238, 1);
+}
+
+/*FOOTER STYLING*/
+#footer{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
