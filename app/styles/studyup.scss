@@ -77,3 +77,87 @@
 	color: rgba(251, 219, 12, 1);
 	line-height: 32px;
 }
+
+/* RESPONSIVE STYLING */
+/*PHONES*/
+@media screen and (max-width: 699px) {
+#studyGuideContainer{
+	margin-top: 10%;
+}
+/*GUIDE STYLING*/
+#guideTitle{
+	font-size: 24px;
+}
+#subtitle{
+	font-size: 16px;
+}
+.question_answer{
+	width: 94%;
+	margin-left: 0%;
+}
+
+.question{
+	font-size: 14px;
+}
+
+.question_content{
+	float: left;
+	width: 70%;
+}
+
+.click_for_answer{
+	font-size: 6px;
+}
+
+.guide_answer{
+	font-size: 12px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.quiz_question{
+	font-size: 8px;
+	line-height: 20px;
+}
+}
+
+/*TABLETS*/
+@media screen and (min-width: 700px) and (max-width: 899px) {
+/*GUIDE TITLE STYLING*/
+#guideTitle{
+	font-size: 28px;
+}
+#subtitle{
+	font-size: 20px;
+}
+.question_answer{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.question{
+	font-size: 18px;
+}
+
+.question_content{
+	float: left;
+	width: 70%;
+}
+
+.click_for_answer{
+	font-size: 8px;
+}
+
+.guide_answer{
+	font-size: 14px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.quiz_question{
+	font-size: 10px;
+	line-height: 22px;
+}
+}

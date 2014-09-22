@@ -117,3 +117,54 @@ a{
 .comment{
 	font-size: 20px;
 }
+
+/* RESPONSIVE STYLING */
+/*PHONES*/
+@media screen and (max-width: 699px) {
+.page{
+	font-size: 16px;
+	margin-top: 8%;
+}
+.input{
+	font-size: 16px;
+}
+.positive_button{
+	width: 100%;
+	font-size: 8px;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+.negative_button{
+	width: 100%;
+	font-size: 8px;
+	padding: 10px;
+}
+
+}
+
+/*TABLETS*/
+@media screen and (min-width: 700px) and (max-width: 899px) {
+.positive_button{
+	font-size: 10px;
+	padding: 10px;
+}
+
+.negative_button{
+	font-size: 10px;
+	padding: 10px;
+}
+
+}
+
+/*10"/12" SCREENS*/
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+.positive_button{
+	font-size: 14px;
+}
+
+.negative_button{
+	font-size: 14px;
+}
+
+}
