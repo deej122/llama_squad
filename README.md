@@ -10,10 +10,11 @@ This is a very short choose your own adventure game with two possible results:
                
 1- Help Larry by taking his quick llama quiz. Are you a true llama?       
 2- Head to the study guide to brush up on your llama knowledge before helping Larry.   
-      
+
 ===========         
 This application runs on AngularJS and is deployed in Heroku with a simple NodeJS server.       
-The structure is built using HTML5 and CSS3.     
+The structure is built using HTML5 and CSS3.   
+
 ===========       
 I went for a very minimalistic design so as not to distract from the actual adventure.      
            
